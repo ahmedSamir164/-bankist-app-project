@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: azure;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  padding: 1rem;
+  color: #444;
+  background-color: #f3f3f3;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header h1 {
+  font-size: larger;
+  font-weight: 500;
+  color: #444;
+}
+header img {
+  width: 50px;
+}
+header form input {
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  color: #b6b3b3;
+}
+header form input::placeholder {
+  color: #b6b3b3;
+  font-weight: 700;
+  text-align: center;
+}
+header form input:focus {
+  outline: none !important;
+  border-color: #b6b3b3;
+  background-color: white;
+}
+header form button {
+  width: 40px;
+  border: none;
+  background-color: inherit;
+  font-size: 20px;
+}
+/* header form button:checked {
+} */
+.ballance {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 80px;
+}
+.ballance div p:first-child {
+  font-size: 20px;
+}
+.money {
+  font-size: 40px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 40% 25%;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.forms {
+  margin-left: 20px;
+}
+.transfer {
+  background-color: rgb(236, 139, 59);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 30px;
+  opacity: 0.8;
+  height: 120px;
+}
+.request-loan {
+  background-color: rgb(16, 165, 11);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 30px;
+  opacity: 0.8;
+  height: 120px;
+}
+.close {
+  background-color: rgb(218, 17, 27);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 30px;
+  opacity: 0.8;
+  height: 120px;
+}
+form input {
+  opacity: 0.3;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  color: black;
+}
+form input:focus {
+  opacity: 0.6;
+  outline: none;
+}
+.close p,
+.transfer p {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+.movements {
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  max-height: 380px;
+  overflow-y: auto;
+}
+.movement-row {
+  margin-bottom: 3px;
+  background-color: white;
+  /* border-radius: 5px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.mov-date {
+  display: block;
+  color: #444;
+}
+.movement-deposit {
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  width: 120px;
+  padding: 5px;
+  text-align: center;
+}
+.movement-withdraw {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  width: 120px;
+  padding: 5px;
+  text-align: center;
+}
+.footer {
+  margin-top: 10px;
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 230px;
+}
+.total-in {
+  font-size: 20px;
+  color: green;
+}
+.total-out {
+  font-size: 20px;
+  color: red;
+}
+.interest {
+  font-size: 20px;
+  color: blue;
+}
+.sort {
+  border: none;
+  background-color: #f3f3f3;
+  text-align: center;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}

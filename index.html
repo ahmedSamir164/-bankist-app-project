@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.png" />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="welcome">Log in to get started</h1>
+      <img src="logo.png" alt="logo" />
+      <form class="login">
+        <input type="text" placeholder="USER" class="user-name" maxlength="2" />
+        <input
+          type="password"
+          name="pass"
+          placeholder="PIN"
+          class="password"
+          maxlength="4"
+        />
+        <button type="submit" class="login-btn">&rarr;</button>
+      </form>
+    </header>
+    <div class="container app hidden">
+      <div class="ballance">
+        <div>
+          <p>Current Ballance</p>
+          <p>AS per</p>
+        </div>
+        <p class="money">1,000,000 &dollar;</p>
+      </div>
+      <div class="grid">
+        <div class="movements">
+          <div class="movement-row deposit">
+            <div class="movement-deposit">2 Deposit</div>
+            <div class="movement-value">4000 &dollar;</div>
+          </div>
+          <div class="movement-row withdraw">
+            <div class="movement-withdraw">1 withdraw</div>
+            <div class="movement-value">-500 &dollar;</div>
+          </div>
+        </div>
+        <div class="forms">
+          <form class="transfer" action="">
+            <h3>Transfer money</h3>
+            <input class="transfer-to" type="text" />
+            <input class="transfer-amount" type="number" />
+            <button type="submit">&rarr;</button>
+            <p>Transfer To</p>
+            <p>Amount</p>
+          </form>
+          <form class="request-loan" action="">
+            <h3>Request loan</h3>
+            <input class="loan-amount" type="number" />
+            <button class="loan-btn" type="submit">&rarr;</button>
+            <p>Amount</p>
+          </form>
+          <form class="close" action="">
+            <h3>Close account</h3>
+            <input class="acc-close" type="text" />
+            <input class="pass-close" type="password" />
+            <button class="close-btn" type="submit">&rarr;</button>
+            <p>Confirm user</p>
+            <p>Confirm PIN</p>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <span> IN <span class="total-in"> 0000&euro;</span></span
+        ><span> Out <span class="total-out"> 0000&euro;</span></span
+        ><span> INTEREST <span class="interest"> 0000&euro;</span></span>
+        <button class="sort">&dArr; SORT</button>
+        <span class="timer">You will be logged out in (TIMER)</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
